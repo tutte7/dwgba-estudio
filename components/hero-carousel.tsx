@@ -1,24 +1,24 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const heroImages = [
   {
-    src: "/modern-architecture-exterior-with-clean-lines-and-.jpg",
+    src: "/proyecto21/portada.jpg",
     alt: "Proyecto arquitectónico contemporáneo",
   },
   {
-    src: "/minimalist-interior-space-with-natural-light-and-c.jpg",
+    src: "/proyecto15/20.jpg",
     alt: "Interior minimalista con luz natural",
   },
   {
-    src: "/architectural-detail-of-building-facade-with-geome.jpg",
+    src: "/proyecto14/portada.png",
     alt: "Detalle arquitectónico de fachada",
   },
   {
-    src: "/contemporary-residential-building-in-natural-lands.jpg",
+    src: "/proyecto12/Estar Unidad A 2 a 6 Camara 1.png",
     alt: "Vivienda contemporánea en paisaje natural",
   },
 ]
@@ -80,27 +80,10 @@ export function HeroCarousel() {
               className="h-full w-full object-cover"
               loading={index === 0 ? "eager" : "lazy"}
             />
-            <div className="absolute inset-0 bg-black/20" />
+            <div className="absolute inset-0 bg-black/65" />
           </div>
         ))}
       </div>
-
-      {/* Navigation Controls */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-accent transition-all duration-200 z-10 hover:scale-110"
-        aria-label="Imagen anterior"
-      >
-        <ChevronLeft size={32} />
-      </button>
-
-      <button
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-accent transition-all duration-200 z-10 hover:scale-110"
-        aria-label="Siguiente imagen"
-      >
-        <ChevronRight size={32} />
-      </button>
 
       {/* Slide Indicators */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
@@ -119,8 +102,8 @@ export function HeroCarousel() {
       {/* Hero Content */}
       <div className="absolute inset-0 flex items-center justify-center text-center z-10">
         <div className="max-w-4xl px-4 animate-fade-in">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight text-balance">
-            Arquitectura Contemporánea
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 tracking-tight text-balance">
+            dwgba - estudio
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed text-pretty">
             Diseñamos espacios que trascienden el tiempo, fusionando funcionalidad y belleza en cada proyecto
@@ -129,9 +112,13 @@ export function HeroCarousel() {
           <Button
             size="lg"
             onClick={scrollToProjects}
-            className="bg-accent hover:bg-accent/90 text-white px-8 py-3 text-lg transition-all duration-200 hover:scale-105"
+            className="group bg-white hover:bg-black text-black hover:text-white border border-white hover:border-white px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105 flex items-center gap-2 mx-auto"
           >
-            Explorar Proyectos
+            <span>Explorar Proyectos</span>
+            <ArrowUpRight 
+              size={20} 
+              className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" 
+            />
           </Button>
         </div>
       </div>

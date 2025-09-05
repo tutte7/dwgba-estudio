@@ -5,7 +5,7 @@ import type React from "react"
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Menu, X } from "lucide-react"
+import { Menu, X, ArrowUpRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export function Navigation() {
@@ -61,7 +61,7 @@ export function Navigation() {
           {/* Logo */}
           <Link
             href="/"
-            className={`font-medium text-lg md:text-xl transition-colors duration-200 hover:text-accent ${logoColor}`}
+            className={`font-medium text-lg md:text-xl transition-colors duration-200 hover:text-black ${logoColor}`}
           >
             dwgba • estudio
           </Link>
@@ -89,7 +89,7 @@ export function Navigation() {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button
-              className={`transition-all duration-200 bg-black text-white border-black hover:bg-black/90 pill`}
+              className={`group bg-white cursor-pointer hover:bg-black text-black hover:text-white border border-black hover:border-black transition-all duration-300 hover:scale-105 flex items-center gap-2`}
               onClick={() => {
                 const contactSection = document.querySelector("#contacto")
                 if (contactSection) {
@@ -101,7 +101,7 @@ export function Navigation() {
                 }
               }}
             >
-              Contactar
+              <span>Contactar</span>
             </Button>
           </div>
 
@@ -136,7 +136,7 @@ export function Navigation() {
               ))}
               <div className="px-3 py-2">
                 <Button
-                  className="w-full bg-black text-white border-black hover:bg-black/90 transition-all duration-200 pill"
+                  className="group w-full bg-white hover:bg-black text-black hover:text-white border border-black hover:border-black transition-all duration-300 hover:scale-105 flex items-center gap-2 justify-center"
                   onClick={() => {
                     const contactSection = document.querySelector("#contacto")
                     if (contactSection) {
@@ -149,7 +149,11 @@ export function Navigation() {
                     setIsMenuOpen(false)
                   }}
                 >
-                  Contactar
+                  <span>Contactar</span>
+                  <ArrowUpRight 
+                    size={16} 
+                    className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" 
+                  />
                 </Button>
               </div>
             </div>
