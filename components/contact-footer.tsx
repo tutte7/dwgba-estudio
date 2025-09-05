@@ -72,33 +72,7 @@ export function ContactFooter() {
             </div>
 
             {/* Newsletter & Contact Form */}
-            <div className="space-y-8">
-              {/* Newsletter */}
-              <div className="bg-card rounded-lg p-6 border border-border">
-                <h3 className="text-xl font-bold text-foreground mb-3">Newsletter</h3>
-                <p className="text-muted-foreground mb-4 text-sm">
-                  Recibí las últimas noticias sobre nuestros proyectos y novedades del estudio.
-                </p>
-                <div className="flex gap-2">
-                  <Input type="email" placeholder="tu@email.com" className="flex-1" />
-                  <Button className="bg-accent hover:bg-accent/90 text-white">Suscribirse</Button>
-                </div>
-              </div>
-
-              {/* Quick Contact */}
-              <div className="bg-accent/10 rounded-lg p-6 border border-accent/20">
-                <h3 className="text-xl font-bold text-foreground mb-3">Consulta Rápida</h3>
-                <p className="text-muted-foreground mb-4 text-sm">
-                  ¿Tenés un proyecto en mente? Contanos brevemente y te contactamos.
-                </p>
-                <div className="space-y-3">
-                  <Input placeholder="Nombre completo" />
-                  <Input type="email" placeholder="Email" />
-                  <Input placeholder="Tipo de proyecto" />
-                  <Button className="w-full bg-accent hover:bg-accent/90 text-white">Enviar Consulta</Button>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>

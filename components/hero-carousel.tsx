@@ -6,19 +6,19 @@ import { Button } from "@/components/ui/button"
 
 const heroImages = [
   {
-    src: "/modern-architecture-exterior-with-clean-lines-and-.jpg",
+    src: "/proyecto21/portada.jpg",
     alt: "Proyecto arquitectónico contemporáneo",
   },
   {
-    src: "/minimalist-interior-space-with-natural-light-and-c.jpg",
+    src: "/proyecto15/20.jpg",
     alt: "Interior minimalista con luz natural",
   },
   {
-    src: "/architectural-detail-of-building-facade-with-geome.jpg",
+    src: "/proyecto14/portada.png",
     alt: "Detalle arquitectónico de fachada",
   },
   {
-    src: "/contemporary-residential-building-in-natural-lands.jpg",
+    src: "/proyecto12/Estar Unidad A 2 a 6 Camara 1.png",
     alt: "Vivienda contemporánea en paisaje natural",
   },
 ]
@@ -84,23 +84,6 @@ export function HeroCarousel() {
           </div>
         ))}
       </div>
-
-      {/* Navigation Controls */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 text-white hover:text-accent transition-all duration-200 z-10 hover:scale-110"
-        aria-label="Imagen anterior"
-      >
-        <ChevronLeft size={32} />
-      </button>
-
-      <button
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 text-white hover:text-accent transition-all duration-200 z-10 hover:scale-110"
-        aria-label="Siguiente imagen"
-      >
-        <ChevronRight size={32} />
-      </button>
 
       {/* Slide Indicators */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex space-x-2 z-10">
