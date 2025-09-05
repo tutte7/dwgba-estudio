@@ -47,7 +47,7 @@ export function Navigation() {
 
   const navBackground = isHomePage
     ? isScrolled
-      ? "bg-background/95 backdrop-blur-md border-b border-border/50"
+      ? "bg-white backdrop-blur-md border-b border-border/50"
       : "bg-transparent"
     : "bg-background/95 backdrop-blur-md border-b border-border/50"
 
@@ -55,7 +55,7 @@ export function Navigation() {
   const logoColor = isHomePage && !isScrolled ? "text-white" : "text-foreground"
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navBackground}`}>
+    <nav className={`px-12 fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navBackground}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
@@ -116,14 +116,14 @@ export function Navigation() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden bg-background/95 backdrop-blur-md border-b border-border/50">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="md:hidden bg-white border-b border-gray-200/80">
+            <div className="px-4 pt-4 pb-6 space-y-2">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
                   onClick={(e) => handleSmoothScroll(e, item.href)}
-                  className="block px-3 py-2 text-foreground text-sm uppercase font-medium"
+                  className="block px-4 py-3 text-gray-800 text-sm uppercase font-medium hover:bg-gray-50 rounded-lg transition-colors duration-200"
                 >
                   <span className="rolling-link" aria-hidden="true">
                     <span className="rolling-text">
@@ -134,9 +134,9 @@ export function Navigation() {
                   <span className="sr-only">{item.name}</span>
                 </Link>
               ))}
-              <div className="px-3 py-2">
+              <div className="px-4 pt-4">
                 <Button
-                  className="group w-full bg-white hover:bg-black text-black hover:text-white border border-black hover:border-black transition-all duration-300 hover:scale-105 flex items-center gap-2 justify-center"
+                  className="group w-full bg-black hover:bg-gray-800 text-white border border-black hover:border-gray-800 transition-all duration-300 flex items-center gap-2 justify-center py-3 rounded-lg shadow-sm"
                   onClick={() => {
                     const contactSection = document.querySelector("#contacto")
                     if (contactSection) {

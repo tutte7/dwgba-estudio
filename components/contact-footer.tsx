@@ -94,7 +94,7 @@ export function ContactFooter() {
                 Política de Privacidad
               </Link>
               <div className="text-muted-foreground">
-                Sitio por <span className="text-accent">Ozidia</span>
+                Sitio por <a href="https://www.ozidia.dev/" target="_blank" className="text-accent">Ozidia</a>
               </div>
             </div>
           </div>

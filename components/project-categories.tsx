@@ -23,7 +23,7 @@ const categories = [
     description: "Casas diseñadas para la vida moderna",
   },
   {
-    id: "corporativo-interiores",
+    id: "corporativos",
     title: "ARQ CORP - Diseño Interiores",
     image: "/modern-corporate-interior-design-with-clean-lines.jpg",
     description: "Espacios corporativos y diseño interior",

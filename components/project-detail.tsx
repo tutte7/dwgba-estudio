@@ -35,7 +35,7 @@ export function ProjectDetail({ project, categorySlug }: ProjectDetailProps) {
   return (
     <div className="">
       {/* Sticky top controls with site padding */}
-      <div className="pointer-events-none fixed top-0 left-0 right-0 z-30">
+      <div className="pointer-events-none fixed top-0 left-0 right-0 z-30 px-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
           <Link
             href={`/proyectos/${categorySlug}`}
@@ -44,12 +44,21 @@ export function ProjectDetail({ project, categorySlug }: ProjectDetailProps) {
             <ArrowLeft size={18} />
             <span className="text-xs uppercase">Volver</span>
           </Link>
-          <Link
-            href="#contacto"
-            className="pointer-events-auto pill inline-flex items-center px-4 py-2 bg-black text-white border border-black hover:bg-black/90 transition-colors duration-200"
-          >
-            Contactar
-          </Link>
+            <Button
+              className={`group bg-white cursor-pointer hover:bg-black text-black hover:text-white border border-black hover:border-black transition-all duration-300 hover:scale-105 flex items-center gap-2`}
+              onClick={() => {
+                const contactSection = document.querySelector("#contacto")
+                if (contactSection) {
+                  const offsetTop = contactSection.getBoundingClientRect().top + window.pageYOffset - 80
+                  window.scrollTo({
+                    top: offsetTop,
+                    behavior: "smooth",
+                  })
+                }
+              }}
+            >
+              <span>Contactar</span>
+            </Button>
         </div>
       </div>
 
