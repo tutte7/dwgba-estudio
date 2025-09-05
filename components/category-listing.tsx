@@ -78,8 +78,8 @@ export function CategoryListing({ category, title, description, projects }: Cate
                   alt={project.title}
                   className="w-full h-full object-cover aspect-[4/3] transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300 group-hover:opacity-60" />
-                <div className="absolute top-3 left-3 md:top-4 md:left-4 text-white font-medium text-lg md:text-xl opacity-0 translate-y-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
+                <div className="absolute inset-0 bg-black/50 opacity-30 md:opacity-0 transition-opacity duration-300 group-hover:opacity-60" />
+                <div className="absolute top-3 left-3 md:top-4 md:left-4 text-white font-medium text-lg md:text-xl opacity-100 md:opacity-0 translate-y-0 md:translate-y-1 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">
                   {project.title}
                 </div>
               </Link>

@@ -61,6 +61,9 @@ export function ProjectDetail({ project, categorySlug }: ProjectDetailProps) {
             alt={project.title}
             className="absolute inset-0 w-full h-full object-cover"
           />
+          
+          {/* Black overlay */}
+          <div className="absolute inset-0 bg-black/60"></div>
 
           {/* Project Title, meta and tags bottom-left (over image) */}
           <div className="absolute inset-x-0 bottom-12 z-10">
@@ -70,8 +73,6 @@ export function ProjectDetail({ project, categorySlug }: ProjectDetailProps) {
               </h1>
               <div className="text-white/90 text-sm md:text-base space-x-3 mb-3">
                 <span className="uppercase font-medium">{project.category}</span>
-                <span>•</span>
-                <span>{project.year}</span>
                 <span>•</span>
                 <span>{project.location}</span>
               </div>
@@ -90,10 +91,6 @@ export function ProjectDetail({ project, categorySlug }: ProjectDetailProps) {
                   <span>{project.location}</span>
                 </span>
                 <span className="pill inline-flex items-center gap-2 px-3 py-1 text-xs bg-white/10 border border-white/20 text-white backdrop-blur-[6px]">
-                  <Ruler size={14} />
-                  <span>{project.area}</span>
-                </span>
-                <span className="pill inline-flex items-center gap-2 px-3 py-1 text-xs bg-white/10 border border-white/20 text-white backdrop-blur-[6px]">
                   <CheckCircle size={14} />
                   <span>{project.status}</span>
                 </span>
@@ -103,10 +100,40 @@ export function ProjectDetail({ project, categorySlug }: ProjectDetailProps) {
                     <span>{project.details["Cliente"]}</span>
                   </span>
                 )}
-                {project.details?.["Programa"] && (
+                {project.details?.["Centro Comercial"] && (
                   <span className="pill inline-flex items-center gap-2 px-3 py-1 text-xs bg-white/10 border border-white/20 text-white backdrop-blur-[6px]">
                     <Layers size={14} />
-                    <span>{project.details["Programa"]}</span>
+                    <span>{project.details["Centro Comercial"]}</span>
+                  </span>
+                )}
+                {project.details?.["Salas de Espectáculos"] && (
+                  <span className="pill inline-flex items-center gap-2 px-3 py-1 text-xs bg-white/10 border border-white/20 text-white backdrop-blur-[6px]">
+                    <Layers size={14} />
+                    <span>{project.details["Salas de Espectáculos"]}</span>
+                  </span>
+                )}
+                {project.details?.["Anfiteatros"] && (
+                  <span className="pill inline-flex items-center gap-2 px-3 py-1 text-xs bg-white/10 border border-white/20 text-white backdrop-blur-[6px]">
+                    <Layers size={14} />
+                    <span>{project.details["Anfiteatros"]}</span>
+                  </span>
+                )}
+                {project.details?.["Plaza Interna"] && (
+                  <span className="pill inline-flex items-center gap-2 px-3 py-1 text-xs bg-white/10 border border-white/20 text-white backdrop-blur-[6px]">
+                    <Layers size={14} />
+                    <span>{project.details["Plaza Interna"]}</span>
+                  </span>
+                )}
+                {project.details?.["Gimnasio"] && (
+                  <span className="pill inline-flex items-center gap-2 px-3 py-1 text-xs bg-white/10 border border-white/20 text-white backdrop-blur-[6px]">
+                    <Layers size={14} />
+                    <span>{project.details["Gimnasio"]}</span>
+                  </span>
+                )}
+                {project.details?.["Espacio Cowork"] && (
+                  <span className="pill inline-flex items-center gap-2 px-3 py-1 text-xs bg-white/10 border border-white/20 text-white backdrop-blur-[6px]">
+                    <Layers size={14} />
+                    <span>{project.details["Espacio Cowork"]}</span>
                   </span>
                 )}
                 {project.details?.["Equipo"] && (

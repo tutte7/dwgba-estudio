@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const heroImages = [
@@ -80,7 +80,7 @@ export function HeroCarousel() {
               className="h-full w-full object-cover"
               loading={index === 0 ? "eager" : "lazy"}
             />
-            <div className="absolute inset-0 bg-black/20" />
+            <div className="absolute inset-0 bg-black/65" />
           </div>
         ))}
       </div>
@@ -119,8 +119,8 @@ export function HeroCarousel() {
       {/* Hero Content */}
       <div className="absolute inset-0 flex items-center justify-center text-center z-10">
         <div className="max-w-4xl px-4 animate-fade-in">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight text-balance">
-            Arquitectura Contemporánea
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 tracking-tight text-balance">
+            dwgba - estudio
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed text-pretty">
             Diseñamos espacios que trascienden el tiempo, fusionando funcionalidad y belleza en cada proyecto
@@ -129,9 +129,13 @@ export function HeroCarousel() {
           <Button
             size="lg"
             onClick={scrollToProjects}
-            className="bg-accent hover:bg-accent/90 text-white px-8 py-3 text-lg transition-all duration-200 hover:scale-105"
+            className="group bg-white hover:bg-black text-black hover:text-white border border-white hover:border-white px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105 flex items-center gap-2 mx-auto"
           >
-            Explorar Proyectos
+            <span>Explorar Proyectos</span>
+            <ArrowUpRight 
+              size={20} 
+              className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" 
+            />
           </Button>
         </div>
       </div>
