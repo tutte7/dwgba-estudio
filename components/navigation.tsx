@@ -4,6 +4,7 @@ import type React from "react"
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { Menu, X, ArrowUpRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -61,9 +62,17 @@ export function Navigation() {
           {/* Logo */}
           <Link
             href="/"
-            className={`font-medium text-lg md:text-xl transition-colors duration-200 hover:text-black ${logoColor}`}
+            aria-label="dwgba • estudio"
+            className={`inline-flex items-center`}
           >
-            dwgba • estudio
+            <Image
+              src="/dwgba - logo color.png"
+              alt="dwgba • estudio"
+              width={140}
+              height={28}
+              className="h-6 md:h-7 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}

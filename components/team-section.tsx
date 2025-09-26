@@ -4,52 +4,52 @@ const teamMembers = [
   {
     name: "Diego Martínez",
     position: "Director Fundador",
-    image: "/placeholder.svg?key=team1",
+    image: "/team/154.png",
   },
   {
     name: "Gabriela Rodríguez",
     position: "Socia Directora",
-    image: "/placeholder.svg?key=team2",
+    image: "/team/155.png",
   },
   {
     name: "Bruno Fernández",
     position: "Arquitecto Senior",
-    image: "/placeholder.svg?key=team3",
+    image: "/team/156.png",
   },
   {
     name: "Ana Castillo",
     position: "Arquitecta de Proyectos",
-    image: "/placeholder.svg?key=team4",
+    image: "/team/157.png",
   },
   {
     name: "Martín López",
     position: "Arquitecto Junior",
-    image: "/placeholder.svg?key=team5",
+    image: "/team/158.png",
   },
   {
     name: "Sofía Herrera",
     position: "Diseñadora de Interiores",
-    image: "/placeholder.svg?key=team6",
+    image: "/team/159.png",
   },
   {
     name: "Carlos Mendoza",
     position: "Coordinador de Obra",
-    image: "/placeholder.svg?key=team7",
+    image: "/team/160.png",
   },
   {
     name: "Lucía Torres",
     position: "Arquitecta Paisajista",
-    image: "/placeholder.svg?key=team8",
+    image: "/team/161.png",
   },
   {
     name: "Andrés Silva",
     position: "Arquitecto Técnico",
-    image: "/placeholder.svg?key=team9",
+    image: "/team/162.png",
   },
   {
     name: "Valentina Cruz",
     position: "Diseñadora Gráfica",
-    image: "/placeholder.svg?key=team10",
+    image: "/team/163.png",
   },
 ]
 

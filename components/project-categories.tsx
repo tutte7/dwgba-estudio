@@ -7,25 +7,25 @@ const categories = [
   {
     id: "publicos-urbanos",
     title: "Proyectos Públicos y Urbanos",
-    image: "/modern-public-building-with-urban-context.jpg",
+    image: "/portadas-proyectos/PROYECTOS PULICOS Y URBNOS .jpg",
     description: "Espacios públicos que transforman la ciudad",
   },
   {
     id: "desarrollos",
     title: "Desarrollos",
-    image: "/residential-development-with-contemporary-architec.jpg",
+    image: "/portadas-proyectos/DESARROLLOS .png",
     description: "Complejos residenciales y comerciales",
   },
   {
     id: "viviendas-unifamiliares",
     title: "Viviendas Unifamiliares",
-    image: "/contemporary-single-family-house-with-natural-mate.jpg",
+    image: "/portadas-proyectos/VIVIENDA .jpeg",
     description: "Casas diseñadas para la vida moderna",
   },
   {
     id: "corporativos",
     title: "ARQ CORP - Diseño Interiores",
-    image: "/modern-corporate-interior-design-with-clean-lines.jpg",
+    image: "/portadas-proyectos/Arq corporatica, diseño de interiro y arq comercial .jpg",
     description: "Espacios corporativos y diseño interior",
   },
 ]
@@ -69,10 +69,9 @@ export function ProjectCategories() {
               {/* Content */}
               <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8">
                 <div className="transform transition-transform duration-300 group-hover:translate-y-[-4px]">
-                  <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-2 tracking-tight text-balance">
+                  <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2 tracking-tight text-balance">
                     {category.title}
                   </h3>
-                  <p className="text-sm md:text-base text-white/90 mb-4 leading-relaxed">{category.description}</p>
 
                   {/* Arrow Icon */}
                   <div className="flex items-center text-white gap-2">

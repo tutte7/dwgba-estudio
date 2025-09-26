@@ -1,25 +1,33 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react"
+import { ArrowUpRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const heroImages = [
   {
-    src: "/proyecto21/portada.jpg",
-    alt: "Proyecto arquitectónico contemporáneo",
+    src: "/carrousel/_MG_2319.jpg",
+    alt: "Imagen de proyecto del estudio 1",
   },
   {
-    src: "/proyecto15/20.jpg",
-    alt: "Interior minimalista con luz natural",
+    src: "/carrousel/2022-12-02 19.15.52.jpg",
+    alt: "Imagen de proyecto del estudio 2",
   },
   {
-    src: "/proyecto14/portada.png",
-    alt: "Detalle arquitectónico de fachada",
+    src: "/carrousel/Ext 01 Final.jpg",
+    alt: "Imagen de proyecto del estudio 3",
   },
   {
-    src: "/proyecto12/Estar Unidad A 2 a 6 Camara 1.png",
-    alt: "Vivienda contemporánea en paisaje natural",
+    src: "/carrousel/F2 (1) copiaA.jpg",
+    alt: "Imagen de proyecto del estudio 4",
+  },
+  {
+    src: "/carrousel/final 6.jpg",
+    alt: "Imagen de proyecto del estudio 5",
+  },
+  {
+    src: "/carrousel/LA PAMPA 1575 - Render fachada.png",
+    alt: "Imagen de proyecto del estudio 6",
   },
 ]
 
@@ -102,8 +110,8 @@ export function HeroCarousel() {
       {/* Hero Content */}
       <div className="absolute inset-0 flex items-center justify-center text-center z-10">
         <div className="max-w-4xl px-4 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 tracking-tight text-balance">
-            dwgba - estudio
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight text-balance lowercase">
+            dwgba • estudio
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed text-pretty">
             Diseñamos espacios que trascienden el tiempo, fusionando funcionalidad y belleza en cada proyecto

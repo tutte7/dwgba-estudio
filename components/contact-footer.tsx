@@ -1,7 +1,8 @@
 "use client"
 
 import Link from "next/link"
-import { Mail, Phone, MapPin, Instagram, Linkedin, Twitter } from "lucide-react"
+import Image from "next/image"
+import { Mail, Phone, MapPin, Instagram, Facebook } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 
@@ -16,11 +17,14 @@ export function ContactFooter() {
             <div className="space-y-8">
               <div>
                 <h2 className="section-title-sm mb-6">
-                  Hablemos de tu Proyecto
+                  CONTACTO
                 </h2>
                 <p className="text-lg text-muted-foreground leading-relaxed text-pretty">
-                  Cada proyecto es único. Nos encanta escuchar nuevas ideas y transformarlas en realidades
-                  arquitectónicas excepcionales.
+                  <span className="lowercase font-medium text-foreground">dwgba • estudio</span>
+                  <br />
+                  Estudio de Arquitectura de la Ciudad de Buenos Aires • Palermo.
+                  <br />
+                  Cnel. Niceto Vega 4601•4699 • Piso 9 • Of 903 • C1414BEA • Buenos Aires.
                 </p>
               </div>
 
@@ -29,10 +33,9 @@ export function ContactFooter() {
                 <div className="flex items-start space-x-3">
                   <MapPin size={20} className="text-accent mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium text-foreground">Estudio</div>
+                    <div className="font-medium text-foreground lowercase">dwgba • estudio</div>
                     <div className="text-muted-foreground">
-                      Av. Corrientes 1234, Piso 8<br />
-                      C1043AAZ Buenos Aires, Argentina
+                      Cnel. Niceto Vega 4601•4699 • Piso 9 • Of 903 • C1414BEA • Buenos Aires
                     </div>
                   </div>
                 </div>
@@ -41,7 +44,7 @@ export function ContactFooter() {
                   <Phone size={20} className="text-accent flex-shrink-0" />
                   <div>
                     <div className="font-medium text-foreground">Teléfono</div>
-                    <div className="text-muted-foreground">+54 11 4567-8900</div>
+                    <div className="text-muted-foreground">+54 9 11 5800•1537</div>
                   </div>
                 </div>
 
@@ -49,7 +52,7 @@ export function ContactFooter() {
                   <Mail size={20} className="text-accent flex-shrink-0" />
                   <div>
                     <div className="font-medium text-foreground">Email</div>
-                    <div className="text-muted-foreground">hola@dwgba.com.ar</div>
+                    <div className="text-muted-foreground">estudio@dwgba.com.ar</div>
                   </div>
                 </div>
               </div>
@@ -58,14 +61,11 @@ export function ContactFooter() {
               <div>
                 <div className="font-medium text-foreground mb-3">Seguinos</div>
                 <div className="flex space-x-4">
-                  <Link href="#" className="text-muted-foreground hover:text-accent transition-colors duration-200">
+                  <Link href="https://www.instagram.com/dwgba/" target="_blank" className="text-muted-foreground hover:text-accent transition-colors duration-200">
                     <Instagram size={24} />
                   </Link>
-                  <Link href="#" className="text-muted-foreground hover:text-accent transition-colors duration-200">
-                    <Linkedin size={24} />
-                  </Link>
-                  <Link href="#" className="text-muted-foreground hover:text-accent transition-colors duration-200">
-                    <Twitter size={24} />
+                  <Link href="https://www.facebook.com/dwgba.estudio/" target="_blank" className="text-muted-foreground hover:text-accent transition-colors duration-200">
+                    <Facebook size={24} />
                   </Link>
                 </div>
               </div>
@@ -80,9 +80,17 @@ export function ContactFooter() {
       {/* Footer Bottom */}
       <div className="border-t border-border py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
-              <div className="font-bold text-foreground">dwgba • estudio</div>
+            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+              <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
+              <div className="font-bold text-foreground lowercase">
+                <Image
+                  src="/dwgba - logo color.png"
+                  alt="dwgba • estudio"
+                  width={140}
+                  height={28}
+                  className="h-6 w-auto"
+                />
+              </div>
               <div className="text-sm text-muted-foreground">© 2024 Todos los derechos reservados</div>
             </div>
 
