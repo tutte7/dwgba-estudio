@@ -51,6 +51,11 @@ const teamMembers = [
     position: "Diseñadora Gráfica",
     image: "/team/163.png",
   },
+  {
+    name: "Keiko",
+    position: "Perrito",
+    image: "/team/keiko.jpeg"
+  }
 ]
 
 export function TeamSection() {
@@ -69,32 +74,57 @@ export function TeamSection() {
               pensamiento. Pulsamos a través de todas nuestras interacciones, para aprender constantemente unos de
               otros, expandiendo nuestro conocimiento en todos los sentidos y direcciones.
             </p>
-            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-              ¿Querés ser parte de la cultura de dwgba • estudio?
-              <br />
-              Siempre estamos <strong className="text-foreground">buscando nuevos talentos</strong>.
-            </p>
           </div>
         </div>
 
         {/* Team Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
-          {teamMembers.map((member, index) => (
-            <div key={index} className="group">
-              <div className="relative aspect-square overflow-hidden bg-muted">
-                <img
-                  src={member.image || "/placeholder.svg"}
-                  alt={member.name}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                {/* Bottom blur strip with name + role */}
-                <div className="absolute inset-x-0 bottom-0 p-3 md:p-4 bg-gradient-to-t from-black/60 to-transparent backdrop-blur-sm">
-                  <h3 className="text-white font-medium text-sm md:text-base leading-tight">{member.name}</h3>
-                  <p className="text-white/80 text-[10px] md:text-xs uppercase">{member.position}</p>
+        <div className="space-y-6">
+          {/* Primera fila - 4 miembros */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+            {teamMembers.slice(0, 4).map((member, index) => (
+              <div key={index} className="group">
+                <div className="relative aspect-auto overflow-hidden bg-muted">
+                  <img
+                    src={member.image || "/placeholder.svg"}
+                    alt={member.name}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
                 </div>
               </div>
+            ))}
+          </div>
+          
+          {/* Segunda fila - 4 miembros */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+            {teamMembers.slice(4, 8).map((member, index) => (
+              <div key={index + 4} className="group">
+                <div className="relative aspect-auto overflow-hidden bg-muted">
+                  <img
+                    src={member.image || "/placeholder.svg"}
+                    alt={member.name}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          {/* Tercera fila - 3 miembros centrados */}
+          <div className="flex justify-center">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 w-full md:max-w-[75%]">
+              {teamMembers.slice(8, 11).map((member, index) => (
+                <div key={index + 8} className="group">
+                  <div className="relative aspect-auto overflow-hidden bg-muted">
+                    <img
+                      src={member.image || "/placeholder.svg"}
+                      alt={member.name}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>

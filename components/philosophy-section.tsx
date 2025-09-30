@@ -22,8 +22,11 @@ export function PhilosophySection() {
 
           {/* Content */}
           <div className="space-y-6 text-lg md:text-xl text-black leading-relaxed">
-            <p className="text-pretty font-medium lowercase">
-              <span className="uppercase">f</span>undado en 1993 nuestroEstudio de Arquitectura se ha consolidado como un espacio de excelencia profesional, dedicado al desarrollo de proyectos y obras que abarcan desde la escala doméstica hasta la urbana, y que transitan entre lo privado y lo público. En todos ellos, el compromiso, la actitud y la intensidad con que son abordados constituyen el sello distintivo de nuestro quehacer. En nuestro estudio no existen encargos menores: cada proyecto representa una oportunidad de innovar, crecer y aprender en conjunto. Disfrutamos dellevarlos adelante como equipo, colaborando estrechamente con desarrolladores, asesores, gremios y proveedores. Creemos firmemente que este camino compartido constituye la base para alcanzar nuestros objetivos y sostener mejores estándaresprofesionales
+            <p className="text-pretty font-medium">
+              Fundado en 1993, nuestro estudio de arquitectura se ha consolidado como un espacio de excelencia profesional, dedicado al desarrollo de proyectos y obras que abarcan desde la escala doméstica hasta la urbana, y que transitan entre lo privado y lo público. 
+              En todos ellos, el compromiso, la actitud y la intensidad con que son abordados constituyen el sello distintivo de nuestro quehacer.
+              En nuestro estudio no existen encargos menores: cada proyecto representa una oportunidad de innovar, crecer y aprender en conjunto. Disfrutamos de llevarlos adelante como equipo, colaborando estrechamente con desarrolladores, asesores, gremios y proveedores. Creemos firmemente que este camino compartido constituye la base para alcanzar nuestros objetivos y sostener mejores estándares profesionales.
+
             </p>
 
             {/* Stats or highlights */}

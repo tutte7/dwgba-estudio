@@ -202,6 +202,11 @@
     border-radius: 999px !important;
   }
 
+  /* Utility: subtly rounded button */
+  .btn-rounded {
+    border-radius: 10px !important;
+  }
+
   /* Rolling text hover for navbar links */
   .rolling-link {
     display: inline-block;

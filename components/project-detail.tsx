@@ -45,7 +45,7 @@ export function ProjectDetail({ project, categorySlug }: ProjectDetailProps) {
             <span className="text-xs uppercase">Volver</span>
           </Link>
             <Button
-              className={`group bg-white cursor-pointer hover:bg-black text-black hover:text-white border border-black hover:border-black transition-all duration-300 hover:scale-105 flex items-center gap-2`}
+              className={`btn-rounded group bg-white cursor-pointer hover:bg-black text-black hover:text-white border border-black hover:border-black transition-all duration-300 hover:scale-105 flex items-center gap-2`}
               onClick={() => {
                 const contactSection = document.querySelector("#contacto")
                 if (contactSection) {

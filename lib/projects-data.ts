@@ -109,7 +109,7 @@ export const projectsDatabase: ProjectsDatabase = {
           title: "Centro Comercial Merlo",
           year: "2024",
           location: "Merlo",
-          image: "/proyecto1/proy-1-img-1.webp",
+          image: "/proyecto1/proy-1-img-4.webp",
           size: "large" as const,
         },
         {
@@ -162,10 +162,10 @@ export const projectsDatabase: ProjectsDatabase = {
         },
         {
           id: "oasis-urbano-santa-fe",
-          title: "Oasis urbano Santa fe",
+          title: "Oasis urbano Santa Fe",
           year: "2012",
           location: "Santa fe 5111, CABA",
-          image: "/proyecto34/portada.jpg",
+          image: "/proyecto34/acceso-santa-fe.jpg",
           size: "small" as const,
         },
         {
@@ -391,7 +391,7 @@ export const projectsDatabase: ProjectsDatabase = {
           Ubicación: "Merlo, Buenos Aires",
           Equipo: "dwgba • estudio",
         },
-        heroImage: "/proyecto1/proy-1-img-1.webp",
+        heroImage: "/proyecto1/proy-1-img-4.webp",
         images: [
           { src: "/proyecto1/proy-1-img-1.webp", alt: "Vista exterior del centro comercial" },
           { src: "/proyecto1/proy-1-img-2.webp", alt: "Plaza interna con anfiteatro" },
@@ -566,10 +566,10 @@ export const projectsDatabase: ProjectsDatabase = {
       },
       "oasis-urbano-santa-fe": {
         id: "oasis-urbano-santa-fe",
-        title: "Oasis urbano Santa fe",
+        title: "Oasis urbano Santa Fe",
         category: "Proyectos Públicos y Urbanos",
         year: "2012",
-        location: "Santa fe 5111, CABA",
+        location: "Santa Fe 5111, CABA",
         area: "430 m²",
         status: "Completado",
         description:
@@ -582,7 +582,7 @@ export const projectsDatabase: ProjectsDatabase = {
           Ubicación: "Santa fe 5111, CABA",
           Equipo: "dwgba • estudio",
         },
-        heroImage: "/proyecto34/portada.jpg",
+        heroImage: "/proyecto34/acceso-santa-fe.jpg",
         images: [
           { src: "/proyecto34/portada.jpg", alt: "Vista general del oasis urbano" },
           { src: "/proyecto34/acceso-santa-fe.jpg", alt: "Acceso desde Santa Fe" },

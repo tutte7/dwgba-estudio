@@ -56,9 +56,6 @@ export function CategoryListing({ category, title, description, projects }: Cate
             <h1 className="section-title-sm mb-4 text-balance">
               {title}
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-pretty max-w-3xl">
-              {description}
-            </p>
           </div>
         </div>
       </section>

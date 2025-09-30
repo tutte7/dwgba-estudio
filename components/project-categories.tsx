@@ -19,12 +19,12 @@ const categories = [
   {
     id: "viviendas-unifamiliares",
     title: "Viviendas Unifamiliares",
-    image: "/portadas-proyectos/VIVIENDA .jpeg",
+    image: "/portadas-proyectos/VIVIENDA.jpg",
     description: "Casas diseñadas para la vida moderna",
   },
   {
     id: "corporativos",
-    title: "ARQ CORP - Diseño Interiores",
+    title: "ARQ CORP • Diseño Interiores",
     image: "/portadas-proyectos/Arq corporatica, diseño de interiro y arq comercial .jpg",
     description: "Espacios corporativos y diseño interior",
   },
@@ -39,10 +39,6 @@ export function ProjectCategories() {
           <h2 className="section-title mb-4 text-balance">
             Nuestros Proyectos
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl leading-relaxed text-pretty">
-            Explorá nuestro portafolio organizado por categorías, cada una reflejando nuestra visión arquitectónica
-            contemporánea.
-          </p>
         </div>
 
         {/* Categories Grid */}
@@ -69,7 +65,7 @@ export function ProjectCategories() {
               {/* Content */}
               <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8">
                 <div className="transform transition-transform duration-300 group-hover:translate-y-[-4px]">
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2 tracking-tight text-balance">
+                  <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2 tracking-tight text-balance font-serif">
                     {category.title}
                   </h3>
 

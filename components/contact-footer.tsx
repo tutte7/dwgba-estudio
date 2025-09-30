@@ -19,12 +19,12 @@ export function ContactFooter() {
                 <h2 className="section-title-sm mb-6">
                   CONTACTO
                 </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed text-pretty">
-                  <span className="lowercase font-medium text-foreground">dwgba • estudio</span>
+                <p className="text-lg text-muted-foreground leading-relaxed text-pretty font-serif">
+                  <span className="lowercase font-medium text-foreground font-serif">dwgba • estudio</span>
                   <br />
                   Estudio de Arquitectura de la Ciudad de Buenos Aires • Palermo.
                   <br />
-                  Cnel. Niceto Vega 4601•4699 • Piso 9 • Of 903 • C1414BEA • Buenos Aires.
+                  Cnel. Niceto Vega 4601 • 4699 • Piso 9 • Of 903 • C1414BEA • Buenos Aires.
                 </p>
               </div>
 
@@ -33,9 +33,9 @@ export function ContactFooter() {
                 <div className="flex items-start space-x-3">
                   <MapPin size={20} className="text-accent mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium text-foreground lowercase">dwgba • estudio</div>
-                    <div className="text-muted-foreground">
-                      Cnel. Niceto Vega 4601•4699 • Piso 9 • Of 903 • C1414BEA • Buenos Aires
+                    <div className="font-medium text-foreground lowercase font-serif">dwgba • estudio</div>
+                    <div className="text-muted-foreground font-serif">
+                      Cnel. Niceto Vega 4601 • 4699 • Piso 9 • Of 903 • C1414BEA • Buenos Aires
                     </div>
                   </div>
                 </div>
@@ -80,29 +80,34 @@ export function ContactFooter() {
       {/* Footer Bottom */}
       <div className="border-t border-border py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-              <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
-              <div className="font-bold text-foreground lowercase">
-                <Image
-                  src="/dwgba - logo color.png"
-                  alt="dwgba • estudio"
-                  width={140}
-                  height={28}
-                  className="h-6 w-auto"
-                />
-              </div>
-              <div className="text-sm text-muted-foreground">© 2024 Todos los derechos reservados</div>
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            {/* Logo */}
+            <div className="flex items-center">
+              <Image
+                src="/dwgba - logo color.png"
+                alt="dwgba • estudio"
+                width={140}
+                height={28}
+                className="h-6 w-auto"
+              />
             </div>
-
-            <div className="flex items-center space-x-6 text-sm">
-              <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
-                Prensa
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
-                Política de Privacidad
-              </Link>
-              <div className="text-muted-foreground">
-                Sitio por <a href="https://www.ozidia.dev/" target="_blank" className="text-accent">Ozidia</a>
+            
+            {/* Copyright and Digital Identity */}
+            <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-4 text-center md:text-right">
+              <div className="text-sm text-muted-foreground">
+                © 2025 dwgba<span className="font-serif"> • </span>estudio
+              </div>
+              <div className="flex items-center space-x-1">
+                <span className="text-sm text-muted-foreground">página construida por:</span>
+                <Button variant="outline" size="sm" asChild>
+                  <Link 
+                    href="https://www.instagram.com/id.identidaddigital/" 
+                    target="_blank"
+                    className="text-xs"
+                  >
+                    @id.identidaddigital
+                  </Link>
+                </Button>
               </div>
             </div>
           </div>

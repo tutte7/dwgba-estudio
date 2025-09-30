@@ -98,7 +98,7 @@ export function Navigation() {
           {/* CTA Button */}
           <div className="hidden md:block">
             <Button
-              className={`group bg-white cursor-pointer hover:bg-black text-black hover:text-white border border-black hover:border-black transition-all duration-300 hover:scale-105 flex items-center gap-2`}
+              className={`btn-rounded group bg-white cursor-pointer hover:bg-black text-black hover:text-white border border-black hover:border-black transition-all duration-300 hover:scale-105 flex items-center gap-2`}
               onClick={() => {
                 const contactSection = document.querySelector("#contacto")
                 if (contactSection) {
@@ -117,7 +117,7 @@ export function Navigation() {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className={`md:hidden p-2 transition-colors duration-200 ${textColor}`}
+            className={`md:hidden p-2 transition-colors btn-rounded duration-200 ${textColor}`}
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -145,7 +145,7 @@ export function Navigation() {
               ))}
               <div className="px-4 pt-4">
                 <Button
-                  className="group w-full bg-black hover:bg-gray-800 text-white border border-black hover:border-gray-800 transition-all duration-300 flex items-center gap-2 justify-center py-3 rounded-lg shadow-sm"
+                  className="btn-rounded group w-full bg-black hover:bg-gray-800 text-white border border-black hover:border-gray-800 transition-all duration-300 flex items-center gap-2 justify-center py-3 rounded-lg shadow-sm"
                   onClick={() => {
                     const contactSection = document.querySelector("#contacto")
                     if (contactSection) {

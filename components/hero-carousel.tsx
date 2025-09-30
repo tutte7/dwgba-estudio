@@ -110,24 +110,22 @@ export function HeroCarousel() {
       {/* Hero Content */}
       <div className="absolute inset-0 flex items-center justify-center text-center z-10">
         <div className="max-w-4xl px-4 animate-fade-in">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight text-balance lowercase">
-            dwgba • estudio
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight text-balance lowercase">
+            dwgba <span className="font-serif">• </span>estudio
+          </h2>
+          <h1 className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed text-pretty">
+              Estudio de Arquitectura de la Ciudad de Buenos Aires.
           </h1>
-          <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed text-pretty">
-            Diseñamos espacios que trascienden el tiempo, fusionando funcionalidad y belleza en cada proyecto
-            arquitectónico.
-          </p>
-          <Button
-            size="lg"
+          <button
             onClick={scrollToProjects}
-            className="group bg-white hover:bg-black text-black hover:text-white border border-white hover:border-white px-8 py-4 text-lg font-medium transition-all duration-300 hover:scale-105 flex items-center gap-2 mx-auto"
+            className="btn-rounded bg-white hover:bg-black text-black hover:text-white border border-white hover:border-white px-4 py-2 text-lg font-medium transition-all duration-300 hover:scale-105 flex items-center gap-2 mx-auto"
           >
-            <span>Explorar Proyectos</span>
+            EXPLORAR PROYECTOS
             <ArrowUpRight 
               size={20} 
               className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" 
             />
-          </Button>
+          </button>
         </div>
       </div>
     </section>
