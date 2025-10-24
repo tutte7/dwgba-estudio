@@ -19,12 +19,12 @@ export function ContactFooter() {
                 <h2 className="section-title-sm mb-6">
                   CONTACTO
                 </h2>
-                <p className="text-lg text-muted-foreground leading-relaxed text-pretty font-serif">
-                  <span className="lowercase font-medium text-foreground font-serif">dwgba • estudio</span>
+                <p className="text-lg text-muted-foreground leading-relaxed text-pretty">
+                  <span className="lowercase font-medium text-foreground">dwgba <span className="font-serif">•</span> estudio</span>
                   <br />
-                  Estudio de Arquitectura de la Ciudad de Buenos Aires • Palermo.
+                  Estudio de Arquitectura de la Ciudad de Buenos Aires <span className="font-serif">•</span> Palermo.
                   <br />
-                  Cnel. Niceto Vega 4601 • 4699 • Piso 9 • Of 903 • C1414BEA • Buenos Aires.
+                  Cnel. Niceto Vega 4601 <span className="font-serif">•</span> 4699 <span className="font-serif">•</span> Piso 9 <span className="font-serif">•</span> Of 903 <span className="font-serif">•</span> C1414BEA <span className="font-serif">•</span> Buenos Aires.
                 </p>
               </div>
 
@@ -33,9 +33,9 @@ export function ContactFooter() {
                 <div className="flex items-start space-x-3">
                   <MapPin size={20} className="text-accent mt-1 flex-shrink-0" />
                   <div>
-                    <div className="font-medium text-foreground lowercase font-serif">dwgba • estudio</div>
-                    <div className="text-muted-foreground font-serif">
-                      Cnel. Niceto Vega 4601 • 4699 • Piso 9 • Of 903 • C1414BEA • Buenos Aires
+                    <div className="font-medium text-foreground lowercase">dwgba <span className="font-serif">•</span> estudio</div>
+                    <div className="text-muted-foreground">
+                      Cnel. Niceto Vega 4601 <span className="font-serif">•</span> 4699 <span className="font-serif">•</span> Piso 9 <span className="font-serif">•</span> Of 903 <span className="font-serif">•</span> C1414BEA <span className="font-serif">•</span> Buenos Aires
                     </div>
                   </div>
                 </div>
@@ -44,7 +44,7 @@ export function ContactFooter() {
                   <Phone size={20} className="text-accent flex-shrink-0" />
                   <div>
                     <div className="font-medium text-foreground">Teléfono</div>
-                    <div className="text-muted-foreground">+54 9 11 5800•1537</div>
+                    <div className="text-muted-foreground">+54 9 11 5800<span className="font-serif">•</span>1537</div>
                   </div>
                 </div>
 

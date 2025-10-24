@@ -14,7 +14,7 @@ export function PhilosophySection() {
           {/* Image */}
           <div className="relative overflow-hidden rounded-lg bg-muted aspect-[3/2] md:aspect-[4/3]">
             <img
-              src="/architecture-studio-workspace-with-drafting-tables.jpg"
+              src="/portada-team.jpg"
               alt="Estudio de arquitectura dwgba"
               className="w-full h-full object-cover"
             />

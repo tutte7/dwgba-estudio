@@ -111,7 +111,7 @@ export function HeroCarousel() {
       <div className="absolute inset-0 flex items-center justify-center text-center z-10">
         <div className="max-w-4xl px-4 animate-fade-in">
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 tracking-tight text-balance lowercase">
-            dwgba <span className="font-serif">• </span>estudio
+            dwgba <span className="font-serif text-2xl md:text-5xl mb-7">• </span>estudio
           </h2>
           <h1 className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed text-pretty">
               Estudio de Arquitectura de la Ciudad de Buenos Aires.

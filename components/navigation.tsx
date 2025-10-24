@@ -56,27 +56,47 @@ export function Navigation() {
   const logoColor = isHomePage && !isScrolled ? "text-white" : "text-foreground"
 
   return (
-    <nav className={`px-12 fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navBackground}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 md:h-24">
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navBackground}`}>
+      <div className="w-full px-4 sm:px-6 lg:px-12">
+        <div className="flex items-center justify-center h-20 md:h-24 max-w-[1400px] mx-auto">
           {/* Logo */}
-          <Link
-            href="/"
-            aria-label="dwgba • estudio"
-            className={`inline-flex items-center`}
-          >
-            <Image
-              src="/dwgba - logo color.png"
-              alt="dwgba • estudio"
-              width={140}
-              height={28}
-              className="h-6 md:h-7 w-auto"
-              priority
-            />
-          </Link>
+          <div className="hidden md:block flex-1">
+            <Link
+              href="/"
+              aria-label="dwgba • estudio"
+              className={`inline-flex items-center`}
+            >
+              <Image
+                src="/dwgba - logo color.png"
+                alt="dwgba • estudio"
+                width={140}
+                height={28}
+                className="h-6 md:h-7 w-auto"
+                priority
+              />
+            </Link>
+          </div>
+
+          {/* Mobile Logo (centered) */}
+          <div className="md:hidden flex-1 flex justify-center">
+            <Link
+              href="/"
+              aria-label="dwgba • estudio"
+              className={`inline-flex items-center`}
+            >
+              <Image
+                src="/dwgba - logo color.png"
+                alt="dwgba • estudio"
+                width={140}
+                height={28}
+                className="h-6 w-auto"
+                priority
+              />
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center justify-center space-x-8 flex-1">
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -96,7 +116,7 @@ export function Navigation() {
           </div>
 
           {/* CTA Button */}
-          <div className="hidden md:block">
+          <div className="hidden md:flex flex-1 justify-end">
             <Button
               className={`btn-rounded group bg-white cursor-pointer hover:bg-black text-black hover:text-white border border-black hover:border-black transition-all duration-300 hover:scale-105 flex items-center gap-2`}
               onClick={() => {

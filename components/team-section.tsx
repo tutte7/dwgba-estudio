@@ -4,57 +4,57 @@ const teamMembers = [
   {
     name: "Diego Martínez",
     position: "Director Fundador",
-    image: "/team/154.png",
+    image: "/team/179.jpg",
   },
   {
     name: "Gabriela Rodríguez",
     position: "Socia Directora",
-    image: "/team/155.png",
+    image: "/team/181.jpg",
   },
   {
     name: "Bruno Fernández",
     position: "Arquitecto Senior",
-    image: "/team/156.png",
+    image: "/team/183.jpg",
   },
   {
     name: "Ana Castillo",
     position: "Arquitecta de Proyectos",
-    image: "/team/157.png",
+    image: "/team/185.jpg",
   },
   {
     name: "Martín López",
     position: "Arquitecto Junior",
-    image: "/team/158.png",
+    image: "/team/187.jpg",
   },
   {
     name: "Sofía Herrera",
     position: "Diseñadora de Interiores",
-    image: "/team/159.png",
+    image: "/team/189.jpg",
   },
   {
     name: "Carlos Mendoza",
     position: "Coordinador de Obra",
-    image: "/team/160.png",
+    image: "/team/191.jpg",
   },
   {
     name: "Lucía Torres",
     position: "Arquitecta Paisajista",
-    image: "/team/161.png",
+    image: "/team/193.jpg",
   },
   {
     name: "Andrés Silva",
     position: "Arquitecto Técnico",
-    image: "/team/162.png",
+    image: "/team/195.jpg",
   },
   {
     name: "Valentina Cruz",
     position: "Diseñadora Gráfica",
-    image: "/team/163.png",
+    image: "/team/197.jpg",
   },
   {
     name: "Keiko",
     position: "Perrito",
-    image: "/team/keiko.jpeg"
+    image: "/team/199.jpg"
   }
 ]
 
@@ -65,7 +65,7 @@ export function TeamSection() {
         {/* Section Header */}
         <div className="mb-12 md:mb-16">
           <h2 className="section-title mb-6 text-balance">
-            Nuestro Equipo
+            Nosotros
           </h2>
           <div className="max-w-4xl">
             <p className="text-lg md:text-xl text-muted-foreground mb-6 leading-relaxed text-pretty">

@@ -24,7 +24,8 @@ const categories = [
   },
   {
     id: "corporativos",
-    title: "ARQ CORP • Diseño Interiores",
+    title: "ARQ CORP",
+    titleSuffix: "Diseño Interiores",
     image: "/portadas-proyectos/Arq corporatica, diseño de interiro y arq comercial .jpg",
     description: "Espacios corporativos y diseño interior",
   },
@@ -65,8 +66,14 @@ export function ProjectCategories() {
               {/* Content */}
               <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8">
                 <div className="transform transition-transform duration-300 group-hover:translate-y-[-4px]">
-                  <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2 tracking-tight text-balance font-serif">
+                  <h3 className="text-lg md:text-xl lg:text-2xl font-bold text-white mb-2 tracking-tight text-balance">
                     {category.title}
+                    {(category as any).titleSuffix && (
+                      <>
+                        {" "}
+                        <span className="font-serif">•</span> {(category as any).titleSuffix}
+                      </>
+                    )}
                   </h3>
 
                   {/* Arrow Icon */}
