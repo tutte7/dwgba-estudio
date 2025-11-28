@@ -947,14 +947,6 @@ export const projectsDatabase: ProjectsDatabase = {
           size: "medium" as const,
         },
         {
-          id: "apartamento-casa-escobar",
-          title: "Casa Escobar",
-          year: "2024",
-          location: "Barrio norte",
-          image: "/proyecto35/Foto 4-7-25, 11 41 10 a m.jpg",
-          size: "small" as const,
-        },
-        {
           id: "casa-saal",
           title: "Casa Saal",
           year: "2021",
@@ -1031,32 +1023,6 @@ export const projectsDatabase: ProjectsDatabase = {
           { src: "/proyecto19/portada.jpg", alt: "Vista general de Casa Escobar" },
           { src: "/proyecto19/P1260032.JPG", alt: "Exterior de la vivienda" },
           { src: "/proyecto19/P1260045.JPG", alt: "Detalles arquitectónicos" },
-        ],
-      },
-      "apartamento-casa-escobar": {
-        id: "apartamento-casa-escobar",
-        title: "Casa Escobar",
-        category: "Viviendas Unifamiliares",
-        year: "2024",
-        location: "Barrio norte",
-        area: "85 m²",
-        status: "Completado",
-        description:
-          "Un apartamento contemporáneo que demuestra la versatilidad del estudio en espacios compactos urbanos. Este proyecto, a pesar de su nombre, representa una tipología de apartamento que maximiza la funcionalidad en una superficie reducida, aplicando principios de diseño eficiente en el corazón de Barrio Norte.",
-        details: {
-          Cliente: "Cliente Privado",
-          Apartamento: "Apartamento",
-          Superficie: "85 m²",
-          Año: "2024",
-          Ubicación: "Barrio norte",
-          Equipo: "dwgba • estudio",
-        },
-        heroImage: "/proyecto35/Foto 4-7-25, 11 41 10 a m.jpg",
-        images: [
-          { src: "/proyecto35/Foto 4-7-25, 11 41 10 a m.jpg", alt: "Interior principal del apartamento" },
-          { src: "/proyecto35/Foto 4-7-25, 11 43 00 a m.jpg", alt: "Área de cocina integrada" },
-          { src: "/proyecto35/Foto 4-7-25, 11 44 19 a m.jpg", alt: "Dormitorio principal" },
-          { src: "/proyecto35/Foto 4-7-25, 11 49 58 a m.jpg", alt: "Detalle de diseño interior" },
         ],
       },
       "casa-saal": {
